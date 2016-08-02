@@ -15,7 +15,8 @@ if(isset($_POST['email'])) {
 	// Enter your email account username and password below also...
 	
 	// If your server supports a security layer (Gmail enforces use of 'tls' and port 587) change port accordingly (587 or 25 usually) and use 'tls' or 'ssl' as a third argument like so:
-	// FOR GMAIL: 		$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, 'tls')
+	// FOR GMAIL:
+	$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, 'tls')
 	// GENERIC TLS: 	$transport = Swift_SmtpTransport::newInstance('mail.mediumra.re', 25, 'tls')
 	
 	// If you choose not to use SSL or TLS then the following could work for you:
@@ -24,9 +25,9 @@ if(isset($_POST['email'])) {
 	// or if you prefer/need to fall back to use PHP's inbuilt mail() function:
 	// $transport = Swift_MailTransport::newInstance();
 	
-	$transport = Swift_SmtpTransport::newInstance('mail.yourdomain.com', 25, 'tls' )
-	  ->setUsername('email@domain.com')     
-	  ->setPassword('p@55w0rd')
+	// $transport = Swift_SmtpTransport::newInstance('mail.yourdomain.com', 25, 'tls' )
+	  ->setUsername('doug@kompasapp.com')     
+	  ->setPassword('d1w2w3walker123')
 	  ;
 
 	
@@ -42,9 +43,9 @@ if(isset($_POST['email'])) {
 	
 	
 	// You can change "A message from Pivot Template Form" to your own subject if you want.
-	$message = Swift_Message::newInstance('A message from Pivot Template Form')
+	$message = Swift_Message::newInstance('A message from Kompas')
 	  ->setFrom(array($_POST['email'] => $_POST['name']))
-	  ->setTo(array('email@yourdomain.com' => 'John Doe'))->setBody($messageText);
+	  ->setTo(array('doug@kompasapp.com' => 'Kompas'))->setBody($messageText);
 //                           ^                    ^
 //       Your email address_/          Your name_/
 
