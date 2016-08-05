@@ -12,3 +12,11 @@
   min-width: 140px;
   max-width: 140px;
 }
+
+.client-row .row-wrapper {
+  border: none;
+}
+
+.row-wrapper .col-sm-3 {
+  border-right: none;
+}
