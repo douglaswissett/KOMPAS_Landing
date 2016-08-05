@@ -20,3 +20,25 @@
 .row-wrapper .col-sm-3 {
   border-right: none;
 }
+
+.photo-form-wrapper {
+  margin-bottom: 0;
+}
+
+.mission-statement {
+  font-size: 3em;
+}
+
+.supporters {
+  top: 50px;
+}
+
+
+/*
+  Media Queries
+*/
+@media screen and (max-width: 768px) {
+  .mission-statement {
+    line-height: 1;
+  } 
+}
