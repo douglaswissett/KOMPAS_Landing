@@ -39,6 +39,13 @@
   z-index: 999;
 }
 
+.flex-direction-nav .flex-prev {
+  display: none;
+}
+
+.flex-direction-nav .flex-next {
+  display: none;
+}
 
 /*
   Media Queries
