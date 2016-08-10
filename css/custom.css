@@ -51,6 +51,21 @@
   text-align: justify;
 }
 
+.feature-icon-large i {
+  margin: 0 auto;
+  border: none;
+  font-size: 55px;
+}
+
+.row-icon {
+  position: relative;
+  top: -30px;
+}
+
+.feature-text {
+  padding: 0 15px 0 15px;
+}
+
 /*
   Media Queries
 */
@@ -58,4 +73,7 @@
   .mission-statement {
     line-height: 1;
   } 
+  .footer-team {
+    margin-top: 32px;
+  }
 }
