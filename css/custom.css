@@ -47,6 +47,10 @@
   display: none;
 }
 
+.justify-content {
+  text-align: justify;
+}
+
 /*
   Media Queries
 */
